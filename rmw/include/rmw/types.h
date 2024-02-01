@@ -362,7 +362,7 @@ typedef struct RMW_PUBLIC_TYPE rmw_request_id_s
   int64_t sequence_number;
 
   /// Whether this request is from intra_process communication or not
-  bool from_intra_process {false};
+  bool from_intra_process = false;
 } rmw_request_id_t;
 
 /// Meta-data for a service-related take.
